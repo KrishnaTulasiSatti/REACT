@@ -1,0 +1,7 @@
+.componentsDiv {
+    height: 200px;
+    width: 70%;
+    background-color: antiquewhite;
+    display: flex;
+    gap: 50px;
+}
