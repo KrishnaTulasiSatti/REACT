@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Mycomponent from './Mycomponent.jsx'
 import FunctionComponent from './FunctionComponent.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <App />
