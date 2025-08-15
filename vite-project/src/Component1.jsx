@@ -9,6 +9,10 @@ const Component1 = () => {
         <>
             <h1 className="c1">Component-1</h1>
             <img src={logo} alt="" />
+            <img src="../public/vite.svg" alt="" /> 
+
+            {/* This is in the public assets so we can give the path here directly  */}
+            
         </>
     )
 }
