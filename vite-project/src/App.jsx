@@ -5,14 +5,21 @@ import ClassComponent from './ClassComponent'
 import FunctionComponent from './FunctionComponent'
 import Components from './Components'
 
+
+import Form from './Form'
+
+import FormComponent from './FormComponet'
+
 function App() {
   
   return (
     <>
-      <h1>This is App.jsx Component</h1>
-      <ClassComponent/>
+      {/* <h1>This is App.jsx Component</h1> */}
+      {/* <ClassComponent/>
       <FunctionComponent/>
       <Components/>
+      <Form/> */}
+      <FormComponent/>
     </>
   )
 }
