@@ -22,6 +22,10 @@ import Image2 from './assets/image2.png'
 import Image3 from './assets/image3.png'
 import Image4 from './assets/image4.png'
 
+import ConditionalRendering from './ConditionalRendering'
+import CRcards from './CRcards'
+import Hook1 from './Hook1'
+
 function App() {
   var x = 2;
   var arr = ["Hi","Hello"]
@@ -120,13 +124,19 @@ function App() {
          }
       </div> */}
 
-      <div className="parent-div">
+      {/* <div className="parent-div">
         {
           flipkartCards.map((ele) => {
             return <FlipkartCards Card = {ele} />
           })
         }
-      </div>
+      </div> */}
+
+      <ConditionalRendering/>
+
+      <CRcards/>
+
+      <Hook1/>
       
     </>
   )
