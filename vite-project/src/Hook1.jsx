@@ -11,11 +11,12 @@ const Hook1 = () => {
         setData(Data+1)
     }
 
+    
+
     return (
         <>
             <button onClick={Change}>Click Me!</button>
             <h1>Count : {Data}</h1>
-        
         </>
     )
 }

@@ -26,6 +26,10 @@ import ConditionalRendering from './ConditionalRendering'
 import CRcards from './CRcards'
 import Hook1 from './Hook1'
 
+import UseStateExample from './UseStateExample'
+
+import Cards from './Cards'
+
 function App() {
   var x = 2;
   var arr = ["Hi","Hello"]
@@ -132,11 +136,13 @@ function App() {
         }
       </div> */}
 
-      <ConditionalRendering/>
+      {/* <ConditionalRendering/>
 
       <CRcards/>
 
-      <Hook1/>
+      <Hook1/> */}
+
+      <Cards/>
       
     </>
   )
