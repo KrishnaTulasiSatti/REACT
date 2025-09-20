@@ -26,9 +26,12 @@ const Cards = () => {
 
     const Fun = () => {
 
-        setData([...Data,cardData]); // To add a new item to the existing items
+        setData([...Data,cardData]); 
+        
+        // To add a new item to the existing items
 
         cardData = {
+
             "firstname" : "",
             "lastname"  : "",
             "email"     : ""
