@@ -3,11 +3,53 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 100svh;
+    flex-direction: column;
 }
 
 .card {
-    height: 300px;
     width: 300px;
+    height: auto;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.more_details {
+    text-decoration: none;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,140,255);
+    border-radius: 20px;
+    color: white;
+}
+
+.search-bar {
+    width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 22px;
 }

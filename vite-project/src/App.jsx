@@ -56,6 +56,7 @@ import Store from './Store'
 import { useState } from 'react'
 import DataInfo from './DataInfo'
 
+import Addons from './Addons'
 function App() {
   // var x = 2;
   // var arr = ["Hi","Hello"]
@@ -137,6 +138,7 @@ function App() {
 
   return (
     <>
+
       <Store.Provider value={{data,setData}}>
         <BrowserRouter>
         <Routes>
@@ -147,6 +149,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       </Store.Provider>
+      
+        {/* <Addons/> */}
       
     </>
   )

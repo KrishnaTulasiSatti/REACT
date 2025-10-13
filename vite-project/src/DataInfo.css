@@ -1,4 +1,13 @@
-.card img {
-    height: 50px;
-    width: 50px;
+.image_ img{
+    width: 300px;
+    height: 250px;
+}
+
+.detailed_info {
+    font-size: 24px;
+    color: rgb(0,140,255);
+}
+
+.cards {
+    margin: 30px;
 }
