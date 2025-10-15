@@ -6,7 +6,7 @@ import Task2 from "./Task2"
 const AddData = () => {
 
     const {data,setData} = useContext(Store)
-    console.log(data)
+    console.log("Data :" ,data)
     
     var temp = {
         "Name" : "",
@@ -14,11 +14,11 @@ const AddData = () => {
         "Size" : "",
         "Price" : "",
         "Description" : "",
-        "ImageURL" : ""
+        "ImageURL" : "",
+        "Like" : 0
     };
 
     const GetData = (key,event) => {
-        
         temp[key] = event.target.value;
     }
 
@@ -29,11 +29,17 @@ const AddData = () => {
     }
 
     const Update = (event) => {
-        event.preventDefault()
-    
-        window.alert("Data Uploaded Successfully")
-        setData([...data,temp]);
+
+        event.preventDefault();
+        if(temp.Name != "" && temp.Brand != "" && temp.Price != "" && temp.Description != "") {
+            window.alert("Data Uploaded Successfully")
+            setData([...data,temp]);
+        }
+        else {
+            window.alert("Please fill the details");
+        }
     }
+
     return (
         <> 
         <Task2 />

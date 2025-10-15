@@ -29,6 +29,18 @@ const ViewData = () => {
             }
             
     },[UserQuery])
+
+    const ChangeColor = (event) => {
+        console.log(CopyData);
+        if(CopyData.Like == 0) {
+            event.target.style.backgroundColor = "white";
+            data.Like = 1;
+        }
+        else {
+            event.target.style.backgroundColor = "red";
+            data.Like = 0;
+        }
+    }
     return (
         <> 
             <Task2/>
@@ -63,6 +75,9 @@ const ViewData = () => {
                                         <div>{ele.Price}</div>
                                     </div>
                                     <Link to={`/info/${index}`} className="more_details">More Details</Link>
+                                    <div className="like-button" onClick={(event) => ChangeColor(event)}></div>
+                                    <p>Like</p>
+
                                 </div>
                             </>
                         )
