@@ -138,8 +138,7 @@ function App() {
 
   return (
     <>
-
-      <Store.Provider value={{data,setData}}>
+      {/* <Store.Provider value={{data,setData}}>
         <BrowserRouter>
         <Routes>
           <Route path='/' element={<Task2/>}></Route>
@@ -148,9 +147,10 @@ function App() {
           <Route path='/info/:ind' element={<DataInfo/>}></Route>
         </Routes>
       </BrowserRouter>
-      </Store.Provider>
-      
+      </Store.Provider> */}
         {/* <Addons/> */}
+
+        <Typing/>
       
     </>
   )
