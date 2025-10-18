@@ -150,7 +150,8 @@ function App() {
       </Store.Provider> */}
         {/* <Addons/> */}
 
-        <Typing/>
+        <Typing/> 
+  
       
     </>
   )
