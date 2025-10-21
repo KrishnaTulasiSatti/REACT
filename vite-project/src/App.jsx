@@ -57,6 +57,11 @@ import { useState } from 'react'
 import DataInfo from './DataInfo'
 
 import Addons from './Addons'
+
+import Dashboard from './Attendance'
+
+import CGPA from './CGPA'
+
 function App() {
   // var x = 2;
   // var arr = ["Hi","Hello"]
@@ -150,9 +155,13 @@ function App() {
       </Store.Provider> */}
         {/* <Addons/> */}
 
-        <Typing/> 
-  
-      
+        {/* <Typing/>  */}
+
+        <div className='dashboard'>
+          <div><Dashboard/></div>
+          <div><CGPA/></div>
+        </div>
+
     </>
   )
 }
