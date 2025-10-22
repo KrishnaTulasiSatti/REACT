@@ -8,7 +8,7 @@ const CGPA = () => {
             series: [44, 55, 41, 17, 15],
             options: {
               chart: {
-                width: 380,
+                width: 580,
                 type: 'donut',
               },
               plotOptions: {
@@ -17,20 +17,24 @@ const CGPA = () => {
                   endAngle: 270
                 }
               },
-              labels : ["1","2","3","4","5"],
+              
+              labels : ["9.0 - 10.0","8.0 - 9.0","7.0 - 8.0","6.0 - 7.0"," <6.0"],
               dataLabels: {
-                enabled: false
+                enabled: true, 
+                style: {
+                  fontSize: '18px', 
+                  fontFamily: 'Helvetica, Arial, sans-serif', 
+                  fontWeight: 'bold', 
+                },
               },
               fill: {
                 type: 'gradient',
               },
               legend: {
+                fontSize : "16px",
                 formatter: function(val, opts) {
                   return val + " - " + opts.w.globals.series[opts.seriesIndex]
                 }
-              },
-              title: {
-                text: 'CGPA across all the semesters'
               },
               responsive: [{
                 breakpoint: 480,
@@ -51,8 +55,9 @@ const CGPA = () => {
     
         return (
           <div>
-            <div id="chart">
-                <ReactApexChart options={state.options} series={state.series} type="donut" width={380} />
+            <div id="graph1">
+                <div className="heading"><h1>CGPA across all semesters</h1></div>
+                <ReactApexChart options={state.options} series={state.series} type="donut" width={500} />
               </div>
             <div id="html-dist"></div>
           </div>

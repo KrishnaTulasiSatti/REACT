@@ -1,4 +1,128 @@
 .dashboard {
-    /* background-color: rgb(10, 10, 49); */
-    height: 100svh;
+    height: auto;
+    background-color: rgba(0, 119, 255, 0.139);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 600px;
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 30px;   
+}
+
+#chart {
+    height: 414px;
+    width: 520px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+  
+}
+
+#chart1 {
+    width: 1700px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+#graph {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#graph1 {
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.l2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    /* background-color: blue; */
+    padding: 20px 0px;
+}
+
+.l1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.nav-bar1 {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px grey;
+    width: 100%;
+   
+
+}
+
+.middle {
+    margin-top: 20px;
+    display: flex; 
+    gap: 20px; 
+}
+
+.left {
+    width: 60%;
+   
+}
+.right {
+    /* background-color: red; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 30px;
+    position: relative;
+    top: -18px;
+}
+
+.l1 {
+    height: 50%;
+    /* border: 1px solid black; */
 }

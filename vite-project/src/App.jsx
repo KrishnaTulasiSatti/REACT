@@ -62,6 +62,14 @@ import Dashboard from './Attendance'
 
 import CGPA from './CGPA'
 
+import BarGraph from './BarGraph'
+import Fees from './Fees'
+import Skill from './Skill'
+
+import Nav from './Nav'
+
+import Reports from './Reports'
+
 function App() {
   // var x = 2;
   // var arr = ["Hi","Hello"]
@@ -157,9 +165,46 @@ function App() {
 
         {/* <Typing/>  */}
 
+        
+
         <div className='dashboard'>
-          <div><Dashboard/></div>
-          <div><CGPA/></div>
+          <div><Nav/></div>
+
+          <div className='middle'>
+                <div className="left">
+                  <div className="l1">
+                    <Reports/>
+                  </div>
+                  <div className="l2">
+                    <div><Dashboard/></div>
+                    <div><Skill/></div>
+                  </div>
+                </div>
+                <div className="right">
+                  <div><BarGraph/></div>
+                  <div><CGPA/></div>
+                </div>
+          </div>
+
+          <div className="divs">
+            <div><Fees/></div>
+          </div>
+
+          {/* <div>
+            <div className="divs">
+            <div><Dashboard/></div>
+            <div><BarGraph/></div>
+          </div>
+
+          <div className="divs">
+            <div><Skill/></div>
+            <div><CGPA/></div>
+          </div>
+
+          <div className="divs">
+            <div><Fees/></div>
+          </div>
+          </div> */}
         </div>
 
     </>
